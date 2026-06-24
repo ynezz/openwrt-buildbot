@@ -1,4 +1,4 @@
-FROM        debian:11
+FROM        debian:13
 LABEL       maintainer="OpenWrt Maintainers"
 
 ARG         DEBIAN_FRONTEND=noninteractive
@@ -24,10 +24,11 @@ RUN \
 		gcc-multilib \
 		genisoimage \
 		git-core \
+		gnupg \
 		gosu \
 		libdw-dev \
 		libelf-dev \
-		libncurses5-dev \
+		libncurses-dev \
 		locales \
 		pv \
 		pwgen \
@@ -54,7 +55,9 @@ RUN pip3 install \
 		"buildbot-worker==$BUILDBOT_VERSION" \
 		pyelftools \
 		pyOpenSSL \
-		service_identity
+		service_identity \
+		legacy-cgi
+
 
 ENV LANG=en_US.utf8
 
