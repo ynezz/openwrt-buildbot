@@ -1,0 +1,9 @@
+# Formatting-only commits, skipped by GitHub blame and by git blame
+# with blame.ignoreRevsFile set
+
+# phase1: reformat with black
+e56f359a2c2be5d1b6cd08e390087f242768a1b6
+# phase1: reformat master.cfg with black 26.10.1
+a3906f2769f6dec737be218e20f4624de3768bbe
+# phase2: reformat master.cfg with black 26.10.1
+47e8490da7b72e44d226367e0ef3e2b6d0cececf

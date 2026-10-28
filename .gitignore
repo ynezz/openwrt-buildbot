@@ -1,5 +1,6 @@
 *
 !.gitignore
+!.git-blame-ignore-revs
 !.dockerignore
 !build-docker-images.sh
 !docker
